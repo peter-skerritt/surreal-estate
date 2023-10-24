@@ -1,0 +1,20 @@
+.nav-image {
+    height: 100px;
+    border: none;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.nav-links {
+    margin: none;
+    padding: none;
+    text-align: left;
+}
+
+.navbar-links-item {
+    margin: none;
+    padding: 10px;
+    display: inline-block;
+}

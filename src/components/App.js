@@ -1,24 +1,28 @@
-import'../styles/app.css'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "../styles/app.css";
+import Properties from "./Properties";
+import AddProperty from "./AddProperty";
+import NavBar from "./navbar";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-     
-        <p>
-          React
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Surreal Estate
-        </a>
-      </header>
+      <NavBar />
+      <Routes>
+        <Route path="/view-properties" element={<Properties />} />
+        <Route path="/add-properties" element={<AddProperty />} />
+      </Routes>
     </div>
   );
-}
+};
 
-export default App;
+const RootComponent = () => (
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+export default RootComponent;
