@@ -1,3 +1,37 @@
 .add-property {
-    padding: 0px;
-}
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  .add-property h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+ 
+  .add-property label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .add-property input[type="text"],
+  .add-property select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style the submit button */
+  .add-property button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
